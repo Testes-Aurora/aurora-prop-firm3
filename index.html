@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b10">
+  <meta name="description" content="Aurora — plataforma de avaliação para traders.">
+  <title>Aurora | Trader Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Aurora início"><span class="brand-mark">A</span><span>AURORA</span></a>
+      <div class="side-label">PLATAFORMA</div>
+      <nav>
+        <a class="nav-link active" href="#overview">▦ <span>Visão geral</span></a>
+        <a class="nav-link" href="#challenge">◈ <span>Meu desafio</span></a>
+        <a class="nav-link" href="#trades">↗ <span>Operações</span></a>
+        <a class="nav-link" href="#payouts">＄ <span>Payouts</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="demo-note"><span class="pulse"></span> AMBIENTE DEMONSTRAÇÃO</div>
+        <div class="profile"><div class="avatar">TR</div><div><strong>Trader Demo</strong><small>Conta de avaliação</small></div></div>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div><div class="eyebrow">SEGUNDA-FEIRA, 24 DE NOVEMBRO DE 2026</div><h1>Visão geral</h1></div>
+        <div class="top-actions"><span class="status"><i></i> Mercado conectado (simulado)</span><button class="user-button">TR</button></div>
+      </header>
+      <section class="welcome">
+        <div><p class="eyebrow">BEM-VINDO À AURORA</p><h2>Seu próximo nível começa<br>com <em>consistência.</em></h2><p class="muted">Acompanhe seu desempenho e mantenha suas regras sob controle.</p></div>
+        <div class="welcome-art"><div class="orb"></div><div class="orb-line"></div><span>AURORA <b>TRADING</b></span></div>
+      </section>
+      <section class="section-head" id="overview"><div><h3>Resumo da conta</h3><p class="muted">Dados ilustrativos para demonstração da interface.</p></div><span class="chip">FASE 1 · AVALIAÇÃO</span></section>
+      <section class="stats">
+        <article class="stat-card"><span class="stat-label">Saldo</span><strong id="balance">US$ 10.450,00</strong><small class="positive">↑ 4,50% no desafio</small></article>
+        <article class="stat-card"><span class="stat-label">Equity</span><strong>US$ 10.425,00</strong><small class="muted">Atualização simulada</small></article>
+        <article class="stat-card"><span class="stat-label">P&L total</span><strong class="positive">+US$ 450,00</strong><small class="positive">+4,50%</small></article>
+        <article class="stat-card"><span class="stat-label">Drawdown atual</span><strong>0,75%</strong><small class="muted">Limite máximo: 10%</small></article>
+      </section>
+      <section class="content-grid" id="challenge">
+        <article class="panel progress-panel">
+          <div class="panel-heading"><div><h3>Progresso do desafio</h3><p class="muted">Objetivo de lucro</p></div><strong class="progress-value">4,5<span>%</span></strong></div>
+          <div class="progress-track"><div class="progress-fill"></div></div>
+          <div class="progress-meta"><span>US$ 450 alcançados</span><span>Meta: US$ 1.000</span></div>
+          <div class="rule-grid">
+            <div><small>Limite de perda diária</small><b>US$ 500</b><span class="rule-ok">Dentro do limite</span></div>
+            <div><small>Perda máxima</small><b>US$ 1.000</b><span class="rule-ok">Dentro do limite</span></div>
+            <div><small>Dias operados</small><b>3 dias</b><span class="muted">Mínimo: 5 dias</span></div>
+            <div><small>Consistência</small><b>Regular</b><span class="muted">Sem alertas</span></div>
+          </div>
+        </article>
+        <article class="panel payout-panel" id="payouts">
+          <div class="panel-heading"><div><h3>Payouts</h3><p class="muted">Solicitações e pagamentos</p></div><span class="icon-box">＄</span></div>
+          <div class="payout-empty"><div class="payout-symbol">↗</div><strong>Nenhum payout disponível</strong><p class="muted">Conclua os requisitos do desafio para habilitar solicitações.</p></div>
+          <button class="button button-secondary" id="payoutButton">Ver regras de payout</button>
+          <p class="tiny muted" id="payoutMessage" aria-live="polite"></p>
+        </article>
+      </section>
+      <section class="panel trades-panel" id="trades">
+        <div class="panel-heading"><div><h3>Últimas operações</h3><p class="muted">Histórico demonstrativo</p></div><a href="#trades" class="text-link">Ver histórico completo →</a></div>
+        <div class="table-wrap"><table><thead><tr><th>ATIVO</th><th>TIPO</th><th>VOLUME</th><th>RESULTADO</th><th>DATA</th></tr></thead><tbody>
+          <tr><td><b>EURUSD</b></td><td><span class="tag buy">BUY</span></td><td>0.20 lot</td><td class="positive">+US$ 125,00</td><td>24/11/2026</td></tr>
+          <tr><td><b>GBPUSD</b></td><td><span class="tag sell">SELL</span></td><td>0.10 lot</td><td class="negative">−US$ 35,00</td><td>24/11/2026</td></tr>
+          <tr><td><b>USDJPY</b></td><td><span class="tag buy">BUY</span></td><td>0.15 lot</td><td class="positive">+US$ 82,50</td><td>23/11/2026</td></tr>
+        </tbody></table></div>
+      </section>
+      <footer>© 2026 AURORA TRADING · PROTÓTIPO DE INTERFACE</footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
